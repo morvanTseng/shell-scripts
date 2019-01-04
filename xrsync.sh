@@ -22,6 +22,6 @@ destination_path=$3
 cat $hosts | while read host
 do
     echo "----------$host---------"
-    rsync -rvl ${file_path} ${user}@${host}:$destination
+    rsync -rvl ${file_path} ${user}@${host}:$destination_path
     echo "----------done---------"
 done
